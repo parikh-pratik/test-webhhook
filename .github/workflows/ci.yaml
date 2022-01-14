@@ -14,3 +14,6 @@ jobs:
 
       - name: echo GITHUB_EVENT_PATH
         run: echo "GITHUB_EVENT_PATH=${GITHUB_EVENT_PATH}"
+
+      - name: View event file
+        run: cat "${GITHUB_EVENT_PATH}"
